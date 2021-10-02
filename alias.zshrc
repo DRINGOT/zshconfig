@@ -14,7 +14,7 @@ alias ytb='open -na "Google Chrome" --args "https://youtube.com/"'
 
 # Utils
 alias close="pkill"
-alias myip="curl http://ipecho.net/plain; echo"
+alias myip="curl https://ipecho.net/plain; echo"
 alias myssh="cat ~/.ssh/id_rsa.pub"
 
 #Open app
