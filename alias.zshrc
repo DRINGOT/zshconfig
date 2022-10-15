@@ -6,9 +6,11 @@ alias lune=' curl --silent fr.wttr.in/Moon |head -23'
 alias meteo='curl -s fr.wttr.in/Lille| head -37'
 alias moon=' curl --silent fr.wttr.in/Moon |head -23'
 
+#github
+alias glg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+
 # Research
 alias github='open -na "Google Chrome" --args "https://github.com/"'
-alias glg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 alias stack='open -na "Google Chrome" --args "https://stackoverflow.com/search?q=$*"'
 alias ytb='open -na "Google Chrome" --args "https://youtube.com/"'
 
@@ -16,6 +18,7 @@ alias ytb='open -na "Google Chrome" --args "https://youtube.com/"'
 alias close="pkill"
 alias myip="curl https://ipecho.net/plain; echo"
 alias myssh="cat ~/.ssh/id_rsa.pub"
+alias disk="df -h"
 
 #Open app
 alias pgAdmin='open -a "pgAdmin 4"'
