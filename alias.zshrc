@@ -38,6 +38,11 @@ alias AGENDA='icalBuddy -f -sd -sc -b "🗓️  " -ab "icalBuddy -f -npn -nc -ps
 # Display image file in terminal
 alias show="imgcat"
 
+# Install exa before
+# listing
+alias ll="exa -l -h -m -U -i --icons --git"
+alias llt="exa -1 --icons --tree --git-ignore"
+
 ## TERRAFORM
 alias tf="terraform"
 alias tfa="terraform apply"
