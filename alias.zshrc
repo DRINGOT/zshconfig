@@ -6,8 +6,18 @@ alias lune=' curl --silent fr.wttr.in/Moon |head -23'
 alias meteo='curl -s fr.wttr.in/Lille| head -37'
 alias moon=' curl --silent fr.wttr.in/Moon |head -23'
 
-#github
+# Github
 alias glg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+
+# Github CLI x fzf, install those before
+# Pull request
+function ghpr() {
+    GH_FORCE_TTY=100% gh pr list | fzf --ansi --preview 'GH_FORCE_TTY=100% gh pr view {1}; echo -e "\nGit Diff:\n";GH_FORCE_TTY=100% gh pr diff {1}' --preview-window down --header-lines 3 | awk '{print $1}' | xargs gh pr checkout
+}
+# Repository
+function ghrepo() {
+    GH_FORCE_TTY=100% gh repo list | fzf --ansi --preview 'GH_FORCE_TTY=100% gh repo view {1}' --preview-window down --header-lines 3 | awk '{print $1}' | xargs gh repo clone
+}
 
 # Research
 alias github='open -na "Google Chrome" --args "https://github.com/"'
