@@ -68,4 +68,14 @@ alias tfsh='terraform show'
 alias tft='terraform taint'
 alias tfut='terraform untaint'
 alias tfv="terraform validate"
-
+# TERRAFORM workspace
+alias tfw="terraform workspace"
+alias tfwd="terraform workspace delete"
+alias tfwdelete="terraform workspace delete"
+alias tfwl="terraform workspace list"
+alias tfwlist="terraform workspace list"
+alias tfwn="terraform workspace new"
+alias tfwnew="terraform workspace new"
+alias tfws="terraform workspace select"
+alias tfwselect="terraform workspace select"
+alias tfwshow="terraform workspace show"
