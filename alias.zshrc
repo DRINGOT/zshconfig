@@ -37,3 +37,35 @@ alias AGENDA='icalBuddy -f -sd -sc -b "🗓️  " -ab "icalBuddy -f -npn -nc -ps
 # Install imgcat before
 # Display image file in terminal
 alias show="imgcat"
+
+## TERRAFORM
+alias tf="terraform"
+alias tfa="terraform apply"
+alias tfay='terraform apply -auto-approve'
+alias tfc='terraform console'
+alias tfd="terraform destroy"
+alias tfdy='terraform destroy -auto-approve'
+alias tfg='terraform graph'
+alias tffu='terraform force-unlock'
+alias tfi="terraform init"
+alias tfim='terraform import'
+alias tfin='terraform init'
+alias tfinu='terraform init -upgrade'
+alias tfm='terraform fmt -recursive'
+alias tfo='terraform output'
+alias tfp="terraform plan"
+alias tfpde='terraform plan --destroy'
+alias tfpr='terraform providers'
+alias tfr='terraform refresh'
+alias tfs='terraform state'
+alias tfssw='terraform state show'
+alias tfsls='terraform state list'
+alias tfsmv='terraform state mv'
+alias tfspl='terraform state pull'
+alias tfsph='terraform state push'
+alias tfsrm='terraform state rm'
+alias tfsh='terraform show'
+alias tft='terraform taint'
+alias tfut='terraform untaint'
+alias tfv="terraform validate"
+
